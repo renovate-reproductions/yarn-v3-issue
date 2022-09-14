@@ -1,11 +1,8 @@
 {
-  "name": "buildpack",
+  "name": "yarn-v3-issue",
   "version": "0.0.0-semantic-release",
-  "repository": "https://github.com/containerbase/buildpack.git",
-  "author": "Rhys Arkins <rhys@arkins.net>",
-  "contributors": [
-    "Michael Kriese <michael.kriese@visualon.de>"
-  ],
+  "repository": "https://github.com/renovate-reproductions/yarn-v3-issue.git",
+  "author": "Michael Kriese <michael.kriese@visualon.de>",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -14,31 +11,7 @@
     "yarn": "^3.2.0"
   },
   "devDependencies": {
-    "@semantic-release/exec": "6.0.3",
-    "@types/node": "16.11.47",
-    "@types/shelljs": "0.8.11",
-    "bats": "1.7.0",
-    "bats-assert": "2.0.0",
-    "bats-support": "0.3.0",
-    "commander": "9.4.0",
-    "conventional-changelog-conventionalcommits": "5.0.0",
-    "husky": "8.0.1",
-    "lint-staged": "13.0.3",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.7.1",
-    "semantic-release": "19.0.5",
-    "shelljs": "0.8.5"
-  },
-  "scripts": {
-    "test:bats": "node_modules/bats/bin/bats --timing --verbose-run test/bash/ test/bash/v2 test/bash/tools",
-    "bats": "node_modules/bats/bin/bats --timing --verbose-run",
-    "build": "release:prepare",
-    "lint": "prettier -c -u \"**/*.*\"",
-    "lint-fix": "prettier -w -u \"**/*.*\"",
-    "postinstall": "husky install",
-    "prepare:proxy": "node tools/prepare-proxy.js",
-    "release:prepare": "node tools/prepare-release.js",
-    "release:publish": "node tools/publish-release.js"
+    "@types/node": "16.11.47"
   },
   "packageManager": "yarn@3.2.3"
 }
